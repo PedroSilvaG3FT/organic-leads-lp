@@ -1,5 +1,5 @@
+import images from '@/assets/images'
 import Styles from './styles'
-import Images from '@/assets/images'
 import React, { useEffect, useRef } from 'react'
 import { BsArrowLeftCircle } from 'react-icons/bs'
 
