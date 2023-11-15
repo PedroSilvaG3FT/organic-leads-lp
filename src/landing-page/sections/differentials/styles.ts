@@ -28,7 +28,7 @@ const Text = styled.p`
 `
 
 const Image = styled.img`
-    ${tw`h-full`}
+    ${tw`h-full sm:h-auto`}
 `
 
 export default {
