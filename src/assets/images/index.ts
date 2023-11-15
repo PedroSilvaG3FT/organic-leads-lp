@@ -1,7 +1,11 @@
-import Logo from './logo.png'
-import LogoMascot from './logo-mascot.png'
+import LogoCard from './logo-card.png'
+import LogoGold from './logo-gold.png'
+import LogoGreen from './logo-green.png'
+import LogoWhite from './logo-white.png'
 
 export default {
-    Logo,
-    LogoMascot
+    LogoCard,
+    LogoGold,
+    LogoGreen,
+    LogoWhite
 }

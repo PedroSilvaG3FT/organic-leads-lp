@@ -2,9 +2,9 @@ import tw from 'twin.macro'
 import styled from 'styled-components'
 
 export const AppButton = styled.button`
-    ${tw`p-2.5 px-5 border-0 outline-none cursor-pointer rounded-xl flex justify-center items-center`}
+    ${tw`p-2.5 px-5 border-0 outline-none cursor-pointer rounded-full flex justify-center items-center`}
 
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.secondary};
     background: ${({ theme }) => theme.colors.primary};
     height: ${({ theme }) => theme.spacing.form_control_height};
 

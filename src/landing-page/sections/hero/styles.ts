@@ -1,85 +1,48 @@
-import landingPage from '@/assets/landing-page'
 import { AppContainer } from '@/styles/ts/components'
+import landingPage from '@/assets/landing-page'
 import styled from 'styled-components'
 import tw from 'twin.macro'
 
 const ContainerWrapper = styled.section`
-    background: ${() => `url("${landingPage.HeroPattern}")`};
-    background-size: 100%;
+    ${tw`sm:mt-0 sm:!bg-none`}
+
+    background: #d9d9d9;
+    background: ${() => `url("${landingPage.HeroBG}")`};
+    background-size: cover;
+    min-height: 680px;
+    margin-top: ${({ theme }) =>
+        `calc(${theme.spacing.landing_page_header_height} + 12px)`};
 `
 
 const Container = styled(AppContainer)`
-    ${tw`flex items-start sm:flex-col sm:justify-center overflow-hidden sm:relative sm:pt-8`}
-    top: ${({ theme }) => theme.spacing.landing_page_header_height};
-    padding-top: ${({ theme }) =>
-        `calc(${theme.spacing.landing_page_header_height} + 1rem)`};
+    ${tw`flex flex-col items-center relative sm:pt-8`}
 `
 
-const Content = styled.article`
-    ${tw`w-2/4 relative sm:w-full sm:flex sm:flex-col sm:items-center`}
+const BackgroundImage = styled.img``
 
-    &::before {
-        ${tw`content-[""] h-[560px] w-0.5 absolute left-[-3rem] sm:hidden`}
-        background: ${({ theme }) => theme.colors.white};
-    }
+const Image = styled.img`
+    ${tw`absolute w-52 right-20 bottom-0 sm:hidden`}
 `
 
-const PenIcon = styled.i`
-    ${tw`absolute text-lg top-[20%] left-[-2.4rem] sm:hidden`}
-
-    &::before {
-        ${tw`content-[""] h-4 w-4 rounded-full absolute top-[-0.8rem] left-[-1.05rem]`}
-        outline: 6px solid ${({ theme }) => theme.colors.bgPrimary};
-        background: ${({ theme }) => theme.colors.white};
-    }
-
-    animation: hero-pen-animation 8s ease-in-out infinite both;
-
-    @keyframes hero-pen-animation {
-        0% {
-            top: 20%;
-        }
-        50% {
-            top: 40%;
-        }
-        100% {
-            top: 20%;
-        }
-    }
+const Nav = styled.nav`
+    ${tw`hidden w-full pb-4 mb-4 sm:block`}
+    border-bottom: 1px solid rgba(13, 36, 33, 0.20);
 `
 
-const Row = styled.div`
-    ${tw`flex gap-8 mb-8 sm:hidden`}
-
-    i {
-        color: ${({ theme }) => theme.colors.secondary};
-
-        &:hover {
-            color: ${({ theme }) => theme.colors.white};
-        }
-    }
+const ImageLogo = styled.img`
+    ${tw`w-36`}
 `
 
-const Text = styled.p`
-    ${tw`sm:text-center`}
-`
-
-const TextLight = styled.p`
-    ${tw`font-light`}
-`
-
-const ColoredText = styled.span`
-    ${tw`font-bold`}
-    color: ${({ theme }) => theme.colors.secondary};
+const Small = styled.small`
+    ${tw`hidden font-light sm:block`}
 `
 
 export default {
     ContainerWrapper,
-    ColoredText,
+    BackgroundImage,
     Container,
-    TextLight,
-    Content,
-    PenIcon,
-    Text,
-    Row
+    ImageLogo,
+    Image,
+    Small,
+    Nav
 }

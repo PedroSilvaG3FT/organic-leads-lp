@@ -74,7 +74,7 @@ const AppSideMenu: React.FC<IAppSideMenuProps> = props => {
 
                 {showLogo && (
                     <Styles.Figure>
-                        <Styles.Image src={Images.Logo} />
+                        <Styles.Image src={images.LogoGreen} />
                     </Styles.Figure>
                 )}
             </Styles.Header>

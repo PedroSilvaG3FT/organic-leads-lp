@@ -1,4 +1,4 @@
-const EMAIL_ADMIN = 'uxnocode@uxnocode.com'
+const EMAIL_ADMIN = ''
 
 export const EMAIL_LIST = {
     sender: { admin: EMAIL_ADMIN },

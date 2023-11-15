@@ -4,17 +4,17 @@ import { AiOutlineInstagram, AiOutlineYoutube } from 'react-icons/ai'
 export const SOCIAL_MEDIA = [
     {
         title: `Linkedin`,
-        link: `https://br.linkedin.com/company/uxnocode`,
+        link: ``,
         icon: <FaLinkedinIn />
     },
     {
         title: `Instagram`,
-        link: `https://www.instagram.com/uxnocode/`,
+        link: ``,
         icon: <AiOutlineInstagram />
     },
     {
         title: `Youtube`,
-        link: `https://www.youtube.com/channel/UCIfaNhrQIfafc_RvZWGrpaw`,
+        link: ``,
         icon: <AiOutlineYoutube />
     }
 ]

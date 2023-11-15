@@ -1,10 +1,13 @@
+import landingPage from '@/assets/landing-page'
 import { AppContainer } from '@/styles/ts/components'
 import styled from 'styled-components'
 import tw from 'twin.macro'
 
 const Section = styled.article`
     ${tw`py-8`}
-    background: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.bgSecondary};
+    background-color: ${({ theme }) => theme.colors.primary};
+    background-image: ${() => `url("${landingPage.Pattern}")`};
 `
 
 const Container = styled(AppContainer)`

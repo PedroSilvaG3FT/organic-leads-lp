@@ -7,6 +7,10 @@ import CodeBrowser from './code-browser.svg'
 import PackageCheck from './package-check.svg'
 import ScrollXIndicator from './scroll-x-indicator.svg'
 
+import Sunset from './sunset.png'
+import Hourglass from './hourglass.png'
+import HeartHand from './heart-hand.png'
+
 export default {
     Pen,
     Check,
@@ -15,5 +19,9 @@ export default {
     SearchLg,
     CodeBrowser,
     PackageCheck,
-    ScrollXIndicator
+    ScrollXIndicator,
+
+    Sunset,
+    Hourglass,
+    HeartHand
 }

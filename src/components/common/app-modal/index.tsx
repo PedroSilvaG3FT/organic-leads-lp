@@ -61,7 +61,9 @@ const AppModal: React.FC<AppModalInterface> = props => {
                     >
                         {showMobileHeader && (
                             <Styles.MobileHeader>
-                                <Styles.MobileHeaderImage src={images.Logo} />
+                                <Styles.MobileHeaderImage
+                                    src={images.LogoGreen}
+                                />
                                 <Styles.MobileHeaderButton
                                     onClick={handleClickBackHeader}
                                 >

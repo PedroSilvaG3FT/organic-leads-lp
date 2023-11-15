@@ -3,7 +3,6 @@ import styled, { css } from 'styled-components'
 import { AppButtonColorMode } from '.'
 import { rgba } from 'polished'
 import tw from 'twin.macro'
-import { neon } from '@/styles/ts/mixins/neon.mixin'
 
 interface IButtonProps {
     colorMode: AppButtonColorMode
@@ -71,9 +70,7 @@ const Button = styled(AppButton)<IButtonProps>`
     }
 `
 
-const Text = styled.span`
-    ${tw`mr-4 sm:mr-0`}
-`
+const Text = styled.span``
 
 const Icon = styled.i`
     ${tw`p-2 rounded-lg sm:hidden`}

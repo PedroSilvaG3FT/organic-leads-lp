@@ -24,35 +24,30 @@ const LPFooter: React.FC<ILPFooterProps> = props => {
                     action: () => scrollTo(LANDING_PAGE_NAVIGATION.top)
                 },
                 {
-                    title: `Diferenciais`,
-                    action: () =>
-                        scrollTo(LANDING_PAGE_NAVIGATION.differentials)
-                },
-                {
-                    title: `Projetos`,
+                    title: `Fizemos a difereça`,
                     action: () => scrollTo(LANDING_PAGE_NAVIGATION.cases)
                 },
                 {
-                    title: `Desenvolvimento`,
-                    action: () => scrollTo(LANDING_PAGE_NAVIGATION.development)
+                    title: `Nosso time`,
+                    action: () => scrollTo(LANDING_PAGE_NAVIGATION.team)
                 },
                 {
-                    title: `Depoimentos`,
-                    action: () => scrollTo(LANDING_PAGE_NAVIGATION.testimony)
+                    title: `Sobre nós`,
+                    action: () => scrollTo(LANDING_PAGE_NAVIGATION.about)
+                },
+                {
+                    title: `Nossa metodologia`,
+                    action: () => scrollTo(LANDING_PAGE_NAVIGATION.methodology)
+                },
+                {
+                    title: `Robôs/orgânico`,
+                    action: () => scrollTo(LANDING_PAGE_NAVIGATION.capture)
                 },
                 {
                     title: `FAQs`,
                     action: () => scrollTo(LANDING_PAGE_NAVIGATION.faq)
-                },
-                {
-                    title: `Time`,
-                    action: () => scrollTo(LANDING_PAGE_NAVIGATION.team)
-                },
-                { title: `Carreira`, action: () => openModal() }
-            ].filter(({ title }) => {
-                const hideMobile = ['Diferenciais']
-                return hideMobile.some(item => item !== title)
-            })
+                }
+            ]
         },
         {
             title: `Institucional`,
@@ -61,19 +56,11 @@ const LPFooter: React.FC<ILPFooterProps> = props => {
                     title: `Sobre nós`,
                     action: () => scrollTo(LANDING_PAGE_NAVIGATION.about)
                 },
-                { title: `Carreira`, action: () => openModal() },
+                { title: `Arenas`, action: () => {} },
+                { title: `Novidades`, action: () => {} },
                 {
                     title: `Contato`,
                     action: () => openModalContact()
-                }
-            ]
-        },
-        {
-            title: `Recursos`,
-            items: [
-                {
-                    title: `FAQs`,
-                    action: () => scrollTo(LANDING_PAGE_NAVIGATION.faq)
                 }
             ]
         },
@@ -83,6 +70,15 @@ const LPFooter: React.FC<ILPFooterProps> = props => {
                 title: item.title,
                 action: () => openURL(item.link)
             }))
+        },
+        {
+            title: `Legal`,
+            items: [
+                { title: `Termos de uso`, action: () => {} },
+                { title: `Privacidade`, action: () => {} },
+                { title: `Cookies`, action: () => {} },
+                { title: `Licenças`, action: () => {} }
+            ]
         }
     ]
 
@@ -92,13 +88,14 @@ const LPFooter: React.FC<ILPFooterProps> = props => {
 
     return (
         <>
-            <Styles.Section>
+            <Styles.Section id={LANDING_PAGE_NAVIGATION.socialMedia}>
                 <Styles.Container>
                     <Styles.View>
-                        <Styles.Image src={images.Logo} />
+                        <Styles.Image src={images.LogoWhite} />
                         <Styles.Text className="sm:text-center">
-                            Pessoas incríveis com processos e visão clara,
-                            constroem produtos sensacionais!
+                            Nós semeamos soluções e <br /> cultivamos
+                            relacionamentos <br />
+                            para colher ótimos negócios!
                         </Styles.Text>
                     </Styles.View>
 
@@ -125,8 +122,8 @@ const LPFooter: React.FC<ILPFooterProps> = props => {
 
             <Styles.Footer>
                 <Styles.Text className="mr-auto sm:text-center sm:text-sm sm:mb-4">
-                    ® 2023 uxnocode.com | CNPJ: 46.132.525/0001-81 - Todos os
-                    direitos reservados.
+                    ® 2023 organicleads.com.br | CNPJ: 00.182.874/0001-00 -
+                    Todos os direitos reservados.
                 </Styles.Text>
 
                 <LPSocialMedia />

@@ -1,21 +1,15 @@
-import Organic from './organic.png'
-import Tradefy from './tradefy.png'
-import Jusprod from './jusprod.png'
-import SmartTec from './smart-tec.png'
-import BoraPlanejar from './bora-planejar.png'
-import AuthorOrganic from './author-organic.png'
-import AuthorDefault from './author-default.jpeg'
-import AuthorTradefy from './author-tradefy.png'
-import AuthorBoraPlanejar from './author-bora-planejar.png'
+import MyOTB from './my-otb.png'
+import uxnocode from './uxnocode.png'
+import Bitworks from './bitworks.png'
+import NadineMagalhaes from './nadine-magalhaes.png'
+import EditoraBrasileira from './editora-brasileira.png'
+import ProdutoraBrasileira from './produtora-brasileira.png'
 
 export default {
-    Tradefy,
-    Organic,
-    Jusprod,
-    SmartTec,
-    BoraPlanejar,
-    AuthorOrganic,
-    AuthorDefault,
-    AuthorTradefy,
-    AuthorBoraPlanejar
+    MyOTB,
+    uxnocode,
+    Bitworks,
+    NadineMagalhaes,
+    EditoraBrasileira,
+    ProdutoraBrasileira
 }

@@ -7,36 +7,28 @@ const Container = styled(AppContainer)`
 `
 
 const Content = styled.article`
-    ${tw`mt-12 grid grid-cols-[41% 1fr] sm:grid-cols-1`}
+    ${tw`mt-8 grid grid-cols-2 gap-8 sm:grid-cols-1 sm:mt-6 sm:gap-4`}
 `
 
 const View = styled.article`
-    ${tw`sm:mt-12 sm:flex sm:flex-col sm:items-center`}
+    ${tw`sm:flex sm:flex-col sm:items-center`}
 `
 
 const Title = styled.h1`
-    ${tw`hidden font-medium text-center text-xl mb-6 tracking-[-1.763px] sm:flex`}
+    ${tw`font-medium text-xl mb-8 sm:text-base sm:w-full sm:mb-2`}
 `
 
 const Text = styled.p`
-    ${tw`mb-4 sm:text-center`}
+    ${tw`mb-4 font-light text-[1.225rem] sm:text-base`}
 `
 
-const ColoredText = styled.span`
-    color: ${({ theme }) => theme.colors.secondary};
-`
-
-const HighlightText = styled.span`
-    ${tw`px-1 mx-0.5 rounded-md`}
-    background: ${({ theme }) => theme.colors.primary};
-`
+const Image = styled.img``
 
 export default {
     Text,
     View,
+    Image,
     Title,
     Content,
-    Container,
-    ColoredText,
-    HighlightText
+    Container
 }

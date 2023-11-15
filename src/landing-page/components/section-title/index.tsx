@@ -14,9 +14,6 @@ const LPSectionTitle: React.FC<ILPSectionTitleProps> = props => {
     return (
         <ScrollAnimation animation="fadeInDown">
             <Styles.Container className={className}>
-                <Styles.ShadowTitle mode={shadowMode}>
-                    {title}
-                </Styles.ShadowTitle>
                 <Styles.Title>{title}</Styles.Title>
             </Styles.Container>
         </ScrollAnimation>

@@ -4,7 +4,11 @@ import styled from 'styled-components'
 import { AppButton } from '@/styles/ts/components'
 
 const Container = styled.section`
-    ${tw`flex flex-col items-center py-8 px-12`}
+    ${tw`flex flex-col h-screen items-center py-8 px-12 z-[20]`}
+
+    > * {
+        ${tw`z-[20] transition-all duration-500`}
+    }
 
     > button {
         ${tw`mb-6 w-full relative`}

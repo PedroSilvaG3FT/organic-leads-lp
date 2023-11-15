@@ -1,84 +1,42 @@
 import { AppContainer } from '@/styles/ts/components'
-import { rgba } from 'polished'
 import styled from 'styled-components'
 import tw from 'twin.macro'
+
+const ContainerWrapper = styled.section`
+    background: #d9d9d9;
+`
 
 const Container = styled(AppContainer)`
     ${tw`py-16! flex flex-col items-center sm:pb-8!`}
 `
 
-const Text = styled.p``
-
-const WebContent = styled.section`
-    ${tw`w-11/12 sm:flex sm:overflow-x-auto sm:gap-4 sm:pb-8 sm:items-stretch`}
-    scroll-snap-type: x mandatory;
+const Title = styled.h1`
+    ${tw`text-xl text-center font-semibold mb-8 sm:text-lg`}
+    color: ${({ theme }) => theme.colors.primary};
 `
 
-const Card = styled.article`
-    ${tw`grid grid-cols-[1fr 20% 20%] items-center py-5`}
-    ${tw`sm:border-none sm:grid-cols-1 sm:min-w-[78vw] sm:p-6 sm:rounded-[30px]`}
-    border-top: 1px solid ${({ theme }) => theme.colors.text};
-    scroll-snap-align: center;
+const Small = styled.small``
 
-    p {
-        ${tw`text-[0.94rem] sm:text-center sm:mb-2`}
-    }
-
-    &:first-of-type {
-        border-top: none;
-    }
-
-    @media (max-width: 640px) {
-        background: ${({ theme }) => theme.colors.bgSecondary};
-    }
+const Content = styled.article`
+    ${tw`grid grid-cols-[68% 32%] gap-8 my-8 sm:grid-cols-1`}
 `
 
-const Item = styled.div`
-    ${tw`flex items-center justify-center sm:justify-between sm:p-2 sm:px-12`}
-
-    > p,
-    > img {
-        ${tw`hidden sm:block text-[0.85rem]`}
-    }
-
-    > svg {
-        stroke-width: 2;
-    }
-
-    &:first-of-type > svg {
-        color: ${({ theme }) => theme.colors.primary};
-    }
-
-    &:last-of-type > svg {
-        color: ${({ theme }) => theme.colors.red};
-    }
-
-    @media (max-width: 640px) {
-        &:first-of-type {
-            ${tw`pb-3`}
-            border-bottom: 1px solid
-                ${({ theme }) => rgba(theme.colors.bgPrimary, 0.4)};
-        }
-    }
+const Text = styled.p`
+    ${tw`text-center p-4 mb-4`}
+    border-radius: 7.132px;
+    border: 1.4px dashed #636360;
 `
 
 const Image = styled.img`
-    ${tw`w-28`}
+    ${tw`h-full`}
 `
-
-const Icon = styled.i`
-    ${tw`hidden mb-5 sm:block `}
-`
-
-const MobileContent = styled.section``
 
 export default {
     Text,
-    Card,
-    Item,
-    Icon,
     Image,
+    Title,
+    Small,
+    Content,
     Container,
-    WebContent,
-    MobileContent
+    ContainerWrapper
 }

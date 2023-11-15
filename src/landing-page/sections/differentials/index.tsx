@@ -1,62 +1,50 @@
 import React from 'react'
 import Styles from './styles'
-import LPSectionTitle from '@/landing-page/components/section-title'
-import Icons from '@/assets/icons'
-import images from '@/assets/images'
+import landingPage from '@/assets/landing-page'
+import { AppButton } from '@/styles/ts/components'
 import { LANDING_PAGE_NAVIGATION } from '@/contants/landing-page.contant'
 
 const LPDifferentials: React.FC = () => {
-    const items = [
-        'Interesse de verdade em entender o seu negócio e não somente desenvolver',
-        'Equipe de ux focada em pesquisas para descobrir e organizar as informações',
-        'Uma equipe multidisciplinar dedicada em cada projeto',
-        'Organização e acompanhamento do projeto pelo ecossistema exclusivo uxnocode',
-        'Comunicação clara e simples com nossos clientes',
-        'Desenvolvimento no-code, low-code e code'
-    ]
-
     return (
-        <Styles.Container id={LANDING_PAGE_NAVIGATION.differentials}>
-            <LPSectionTitle title="Diferenciais de mercado" />
-            <Styles.Text className="text-center mt-4 mb-12 sm:mb-4">
-                Veja alguns dos motivos de você nos escolher para construir seu
-                sistema, site ou aplicativo.
-            </Styles.Text>
+        <Styles.ContainerWrapper id={LANDING_PAGE_NAVIGATION.capture}>
+            <Styles.Container>
+                <Styles.Title>
+                    Veja a diferença entre a captação por robôs e{' '}
+                    <br className="sm:hidden" />a captação orgânica de negócios
+                </Styles.Title>
 
-            <Styles.Icon>
-                <Icons.ScrollXIndicator />
-            </Styles.Icon>
+                <Styles.Small className="sm:hidden">
+                    Conheça um pouco mais sobre esse time de especialistas{' '}
+                    <br />
+                    apaixonados pelas relações humanas e pela excelência.
+                </Styles.Small>
 
-            <Styles.WebContent>
-                <Styles.Card className="sm:!hidden">
-                    <Styles.Text></Styles.Text>
+                <Styles.Small className="hidden text-center text-base sm:block">
+                    Veja a diferença da captação por robôs e quando trabalho é
+                    feito organicamente, ou seja, por pessoas reais.
+                </Styles.Small>
 
-                    <Styles.Item>
-                        <Styles.Image src={images.Logo} className="!block" />
-                    </Styles.Item>
+                <Styles.Image
+                    className="hidden w-36 mt-4 sm:block"
+                    src={landingPage.Users}
+                />
 
-                    <Styles.Item>Outras agências</Styles.Item>
-                </Styles.Card>
+                <Styles.Content>
+                    <Styles.Image src={landingPage.capture.robot} />
+                    <Styles.Image src={landingPage.capture.organic} />
+                </Styles.Content>
 
-                {items.map((item, index) => (
-                    <Styles.Card key={index}>
-                        <Styles.Text>{item}</Styles.Text>
+                <Styles.Text>
+                    Pare de pagar por números e comece a pagar por negócios
+                    gerados!
+                    <br />
+                    <br className="hidden sm:block" />
+                    Nós encontramos o cliente ideal e você só fecha o negócio
+                </Styles.Text>
 
-                        <Styles.Item>
-                            <Styles.Image src={images.Logo} />
-                            <Icons.Check />
-                        </Styles.Item>
-
-                        <Styles.Item>
-                            <Styles.Text>Outras agências</Styles.Text>
-                            <Icons.Uncheck />
-                        </Styles.Item>
-                    </Styles.Card>
-                ))}
-            </Styles.WebContent>
-
-            <Styles.MobileContent></Styles.MobileContent>
-        </Styles.Container>
+                <AppButton className="w-80">Quero saber mais</AppButton>
+            </Styles.Container>
+        </Styles.ContainerWrapper>
     )
 }
 

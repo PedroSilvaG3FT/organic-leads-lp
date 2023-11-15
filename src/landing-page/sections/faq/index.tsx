@@ -13,24 +13,20 @@ import AppAccordion, {
 const LPFaq: React.FC = () => {
     const questions: IFaqQuestion[] = [
         {
-            title: `Como vou acompanhar a construção do meu projeto?`,
-            text: `Nós temos um gerente dedicado em cada projeto. Você terá acesso a todas as fases de desenvolvimento pelo whatsapp, relatórios, reuniões e protótipos. Todas as plataformas tem acesso livre e a qualquer hora para você acompanhar em tempo real a criação do seu produto!`
+            title: `O que é geração de leads de forma orgânica?`,
+            text: ``
         },
         {
-            title: `Qual o valor mínimo de investimento em um projeto?`,
-            text: `É impossível no nosso modelo de entendimento falar o valor necessário para construir o seu projeto. Nós vamos entender todas as funcionalidades, plataformas, tempo de desenvolvimento e depois disso, vai ser possível chegar ao valor que você quer investir no seu projeto.`
+            title: `Como posso garantir que os leads gerados de forma orgânica sejam de qualidade?`,
+            text: ``
         },
         {
-            title: `Qual a diferença entre nativo e web responsivo?`,
-            text: `O web app é bem diferente do aplicativo nativo, porque ele não é um aplicativo real, e não estará disponível nas lojas dos sistemas operacionais. Na realidade, o web app é um site desenvolvido de forma pensada para que o conteúdo se adapte a smartphones e tablets assim como a telas de computadores. Já o aplicativo nativo ao contrário, é aquele baixado nas lojas e que permite mais interações com os dispositivos.`
+            title: `Como medir o sucesso na geração de leads orgânicos?`,
+            text: ``
         },
         {
-            title: `Em quais plataformas desenvolvemos?`,
-            text: `Além de ter um ambiente 100% pensado para você acompanhar seu projeto, nós desenvolvemos aplicativos de 3 formas diferentes: Bubble, FlutterFlow e em diversas linguagens de programação. Nós não decidimos por você onde construir, apenas mostramos os pontos fortes e fracos e ficamos a disposição para conversar sobre o melhor lugar para fazer seu app!`
-        },
-        {
-            title: `Quais as diferenças entre low-code, no-code e code?`,
-            text: `Code (código) é a abordagem tradicional em que os desenvolvedores escrevem manualmente o código fonte. Low-code (baixo código) envolve o uso de ferramentas visuais para acelerar o desenvolvimento com menos codificação manual. No-code (sem código) permite criar aplicativos sem escrever código, usando interfaces intuitivas.\n\n Entregamos o código fonte.`
+            title: `Quais são os desafios mais comuns que enfrentamos ao tentar gerar leads de forma orgânica, e como podemos superá-los como empresa?`,
+            text: ``
         }
     ]
 
@@ -47,12 +43,7 @@ const LPFaq: React.FC = () => {
 
     return (
         <Styles.Container id={LANDING_PAGE_NAVIGATION.faq}>
-            <LPSectionTitle title="Perguntas frequentes" />
-
-            <Styles.Text>
-                Essa sessão foi pensada para ajudar você a entender melhor nosso
-                processo. Aqui estão as principais questões.
-            </Styles.Text>
+            <LPSectionTitle className="sm:mb-6" title="FAQs" />
 
             <Styles.Content>
                 {questionsResult.map((item, index) => (
