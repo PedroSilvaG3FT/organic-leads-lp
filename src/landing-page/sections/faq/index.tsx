@@ -14,19 +14,19 @@ const LPFaq: React.FC = () => {
     const questions: IFaqQuestion[] = [
         {
             title: `O que é geração de leads de forma orgânica?`,
-            text: ``
+            text: `Geração de leads de forma orgânica é o processo de atrair potenciais clientes (leads) por meio de esforços não pagos, como marketing de conteúdo, SEO, mídias sociais e outras estratégias que não envolvem publicidade paga.`
         },
         {
             title: `Como posso garantir que os leads gerados de forma orgânica sejam de qualidade?`,
-            text: ``
+            text: `Para atrair leads de qualidade, é importante segmentar seu público-alvo, oferecer conteúdo relevante, fornecer informações de valor, usar formulários de captura eficazes e nutrir os leads por meio de email marketing e outras táticas de engajamento.`
         },
         {
             title: `Como medir o sucesso na geração de leads orgânicos?`,
-            text: ``
+            text: `Você pode medir o sucesso na geração de leads orgânicos acompanhando métricas como o tráfego do site, taxas de conversão, geração de leads, engajamento nas mídias sociais e retorno sobre o investimento (ROI) das estratégias implementadas.`
         },
         {
             title: `Quais são os desafios mais comuns que enfrentamos ao tentar gerar leads de forma orgânica, e como podemos superá-los como empresa?`,
-            text: ``
+            text: `Você pode medir o sucesso na geração de leads orgânicos acompanhando métricas como o tráfego do site, taxas de conversão, geração de leads, engajamento nas mídias sociais e retorno sobre o investimento (ROI) das estratégias implementadas.`
         }
     ]
 
